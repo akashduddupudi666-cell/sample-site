@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us - Bakester</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Georgia, serif;
+      background-color: #fdf9f6;
+      color: #222;
+    }
+
+    /* Breadcrumb */
+    .breadcrumb {
+      padding: 40px 10%;
+      background: #faf3ee;
+      position: relative;
+    }
+
+    .breadcrumb::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: url('pattern-bg.png') no-repeat center center / contain;
+      opacity: 0.08;
+    }
+
+    .breadcrumb-content {
+      position: relative;
+      z-index: 1;
+    }
+
+    .breadcrumb a {
+      color: #d8843b;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    .breadcrumb span {
+      color: #555;
+      font-size: 14px;
+    }
+
+    .breadcrumb h1 {
+      margin-top: 10px;
+      font-size: 36px;
+      font-weight: bold;
+    }
+
+    /* About Section */
+    .about {
+      display: flex;
+      align-items: center;
+      gap: 40px;
+      padding: 60px 10%;
+      flex-wrap: wrap;
+    }
+
+    .about img {
+      flex: 1 1 400px;
+      max-width: 500px;
+      border-radius: 10px;
+    }
+
+    .about-text {
+      flex: 1 1 400px;
+    }
+
+    .about-text h2 {
+      font-size: 28px;
+      margin-bottom: 15px;
+    }
+
+    .about-text p {
+      font-size: 16px;
+      line-height: 1.6;
+      color: #444;
+    }
+
+    /* Services Section */
+    .services {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      align-items: stretch;
+      min-height: 400px;
+    }
+
+    .services img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .services-content {
+      background-color: #8b4b23; /* Brown tone */
+      color: white;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 40px 20px;
+    }
+
+    .services-content h2 {
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+
+    .services-content ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      font-size: 16px;
+      line-height: 2;
+    }
+
+    .services-content ul li {
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    /* Responsive */
+    @media(max-width: 900px) {
+      .services {
+        grid-template-columns: 1fr;
+      }
+      .about {
+        flex-direction: column;
+      }
+    }
+    /* footer*/
+.footer {
+  background: #fdf3e7;
+  padding: 50px 10% 20px;
+  font-family: Georgia, serif;
+  color: #222;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.footer-news {
+  flex: 1;
+  min-width: 250px;
+}
+
+.footer-news h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.footer-news p {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.footer-news input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 25px;
+  border: 1px solid #ccc;
+  outline: none;
+  font-size: 14px;
+}
+
+.footer-news small {
+  display: block;
+  margin-top: 8px;
+  font-size: 12px;
+  color: #555;
+}
+
+.footer-center {
+  flex: 1;
+  text-align: center;
+  min-width: 250px;
+}
+
+.footer-logo {
+  width: 100px;
+  margin-bottom: 15px;
+}
+
+.footer-center p {
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+.footer-time {
+  flex: 1;
+  min-width: 250px;
+}
+
+.footer-time h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.footer-time p {
+  font-size: 14px;
+}
+
+.highlight {
+  color: #d8843b;
+}
+
+.footer-bottom {
+  margin-top: 40px;
+  padding-top: 15px;
+  border-top: 1px solid #ddd;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footer-bottom p {
+  font-size: 13px;
+  margin: 5px 0;
+}
+
+.footer-btn {
+  background: black;
+  color: white;
+  padding: 8px 20px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-size: 14px;
+  transition: background 0.3s ease;
+}
+
+.footer-btn:hover {
+  background: #d8843b;
+}
+
+  </style>
+</head>
+<body>
+
+  <!-- Breadcrumb -->
+  <section class="breadcrumb">
+    <div class="breadcrumb-content">
+      <a href="index.html">Home</a> <span>› About Us</span>
+      <h1>About Us</h1>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about">
+    <img src="b2.webp" alt="Bakery Display">
+    <div class="about-text">
+      <h2>About Our Bakester</h2>
+      <p>
+        The very idea of Bakester had emerged out of immense love and deep passion 
+        towards the art of baking. Because baking is not just baking – it’s an expression 
+        of thoughts, mind, and soul. This intrigued me a lot and lured me to start 
+        <strong>Bakester</strong>. Every product is crafted with love and dedication to 
+        bring joy to your table.
+      </p>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section class="services">
+    <img src="b1.webp" alt="Croissants">
+    <div class="services-content">
+      <h2>Best Services</h2>
+      <ul>
+        <li>Quality</li>
+        <li>Fast Delivered</li>
+        <li>Event Cakes</li>
+      </ul>
+    </div>
+    <img src="b3.jpg" alt="Bakery Shop">
+  </section>
+  <!-- Footer -->
+<footer class="footer">
+  <div class="footer-container">
+
+    <!-- Newsletter -->
+    <div class="footer-news">
+      <h3>Get news & offer</h3>
+      <p>Sign up for our mailing list to get latest update and offers</p>
+      <form>
+        <input type="email" placeholder="Your email..." required>
+      </form>
+      <small>* Don't worry, we never spam</small>
+    </div>
+
+    <!-- Logo & Address -->
+    <div class="footer-center">
+      <img src="chef-hand-gesture-ok-emblem-600nw-2474446889.webp" alt="Bakester Logo" class="footer-logo">
+      <p><strong>Bakester - The dessert studio</strong>, Bhargavi complex, Calavary Road,<br>
+      Opp. Kinetic Magnum, Miyapur, Hyderabad, Telangana - 500049</p>
+      <p>Email: <a href="mailto:bakesterso.b@gmail.com">bakesterso.b@gmail.com</a></p>
+      <p>Land line number: <span class="highlight">040 495 15890</span></p>
+    </div>
+
+    <!-- Opening Time -->
+    <div class="footer-time">
+      <h3>Opening Time</h3>
+      <p>Monday - Friday : <span class="highlight">09:30 am - 09:30 pm</span></p>
+    </div>
+
+  </div>
+
+  <!-- Bottom -->
+  <div class="footer-bottom">
+    <p>© 2023 Bakester. Made by Royal IT Park</p>
+    <a href="brochure.pdf" class="footer-btn">Brochure</a>
+  </div>
+</footer>
+
+</body>
+</html>

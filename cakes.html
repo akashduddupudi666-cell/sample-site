@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bakester Products</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Georgia, serif;
+      background-color: #fdf9f6;
+      color: #222;
+    }
+
+    /* Breadcrumb Section */
+    .breadcrumb {
+      padding: 40px 10%;
+      background: #faf3ee;
+      position: relative;
+    }
+
+    .breadcrumb::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: url('pattern-bg.png') no-repeat center center / contain;
+      opacity: 0.08;
+    }
+
+    .breadcrumb-content {
+      position: relative;
+      z-index: 1;
+    }
+
+    .breadcrumb a {
+      color: #d8843b;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    .breadcrumb span {
+      color: #555;
+      font-size: 14px;
+    }
+
+    .breadcrumb h1 {
+      margin-top: 10px;
+      font-size: 36px;
+      font-weight: bold;
+    }
+
+    /* Product Grid */
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 30px;
+      padding: 50px 10%;
+    }
+
+    .product-card {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+      overflow: hidden;
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+
+    .product-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .product-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .product-card h3 {
+      margin: 15px 0 10px;
+      font-size: 18px;
+    }
+
+    .product-card .btn {
+      display: inline-block;
+      margin: 15px 0 20px;
+      padding: 8px 18px;
+      font-size: 14px;
+      border-radius: 20px;
+      width: 10vw;
+      border: none;
+      background-color: #d8843b;
+      color: white;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .product-card .btn:hover {
+      background-color: #c86e27;
+    }
+    /* fotter*/
+    .footer {
+  background: #fdf3e7;
+  padding: 50px 10% 20px;
+  font-family: Georgia, serif;
+  color: #222;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.footer-news {
+  flex: 1;
+  min-width: 250px;
+}
+
+.footer-news h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.footer-news p {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.footer-news input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 25px;
+  border: 1px solid #ccc;
+  outline: none;
+  font-size: 14px;
+}
+
+.footer-news small {
+  display: block;
+  margin-top: 8px;
+  font-size: 12px;
+  color: #555;
+}
+
+.footer-center {
+  flex: 1;
+  text-align: center;
+  min-width: 250px;
+}
+
+.footer-logo {
+  width: 100px;
+  margin-bottom: 15px;
+}
+
+.footer-center p {
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+.footer-time {
+  flex: 1;
+  min-width: 250px;
+}
+
+.footer-time h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.footer-time p {
+  font-size: 14px;
+}
+
+.highlight {
+  color: #d8843b;
+}
+
+.footer-bottom {
+  margin-top: 40px;
+  padding-top: 15px;
+  border-top: 1px solid #ddd;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footer-bottom p {
+  font-size: 13px;
+  margin: 5px 0;
+}
+
+.footer-btn {
+  background: black;
+  color: white;
+  padding: 8px 20px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-size: 14px;
+  transition: background 0.3s ease;
+}
+
+.footer-btn:hover {
+  background: #d8843b;
+}
+  </style>
+</head>
+<body>
+
+  <!-- Breadcrumb -->
+  <section class="breadcrumb">
+    <div class="breadcrumb-content">
+      <a href="index.html">Home</a> <span>› Products</span>
+      <h1>Products</h1>
+    </div>
+  </section>
+
+  <!-- Products Grid -->
+  <section class="products">
+    <div class="product-card">
+      <img src="1.jpg" alt="Dairy Milk Chocolate Cake">
+      <h3>Dairy Milk Chocolate Cake</h3>
+      <button class="btn">Order Now</button>
+    </div>
+
+    <div class="product-card">
+      <img src="2.webp" alt="Brownies">
+      <h3>Brownies</h3>
+      <button class="btn">Order Now</button>
+    </div>
+
+    <div class="product-card">
+      <img src="3.jpg" alt="Cheese Cake">
+      <h3>Cheese Cake</h3>
+      <button class="btn">Order Now</button>
+    </div>
+
+    <div class="product-card">
+      <img src="4.jpg" alt="Fruit Cake">
+      <h3>Fruit Cake</h3>
+      <button class="btn">Order Now</button>
+    </div>
+     <div class="product-card">
+      <img src="5.jpg" alt="Fruit Cake">
+      <h3>Fruit Cake</h3>
+      <button class="btn">Order Now</button>
+    </div>
+     <div class="product-card">
+      <img src="6.webp" alt="Fruit Cake">
+      <h3>Fruit Cake</h3>
+      <button class="btn">Order Now</button>
+    </div>
+     <div class="product-card">
+      <img src="7.jpg" alt="Fruit Cake">
+      <h3>Fruit Cake</h3>
+      <button class="btn">Order Now</button>
+    </div>
+  </section>
+  <!-- Footer -->
+<footer class="footer">
+  <div class="footer-container">
+
+    <!-- Newsletter -->
+    <div class="footer-news">
+      <h3>Get news & offer</h3>
+      <p>Sign up for our mailing list to get latest update and offers</p>
+      <form>
+        <input type="email" placeholder="Your email..." required>
+      </form>
+      <small>* Don't worry, we never spam</small>
+    </div>
+
+    <!-- Logo & Address -->
+    <div class="footer-center">
+      <img src="chef-hand-gesture-ok-emblem-600nw-2474446889.webp" alt="Bakester Logo" class="footer-logo">
+      <p><strong>Bakester - The dessert studio</strong>, Bhargavi complex, Calavary Road,<br>
+      Opp. Kinetic Magnum, Miyapur, Hyderabad, Telangana - 500049</p>
+      <p>Email: <a href="mailto:bakesterso.b@gmail.com">bakesterso.b@gmail.com</a></p>
+      <p>Land line number: <span class="highlight">040 495 15890</span></p>
+    </div>
+
+    <!-- Opening Time -->
+    <div class="footer-time">
+      <h3>Opening Time</h3>
+      <p>Monday - Friday : <span class="highlight">09:30 am - 09:30 pm</span></p>
+    </div>
+
+  </div>
+
+  <!-- Bottom -->
+  <div class="footer-bottom">
+    <p>© 2023 Bakester. Made by Royal IT Park</p>
+    <a href="brochure.pdf" class="footer-btn">Brochure</a>
+  </div>
+</footer>
+
+</body>
+</html>
